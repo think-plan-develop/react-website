@@ -1,14 +1,16 @@
 import React from 'react';
-import bgi from './Image/bgi.png';
+import bgi from './Image/bgi (2).png';
 import {NavLink} from 'react-router-dom';
 import { PinDropSharp } from '@material-ui/icons';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
 const CommonPage=(props)=>{
 
 return(
     <>
-
+<div className="sec"></div>
     <section id="header" className="sectag">
-    <div className="container-fluid nav-bg">
+    <div className="container-fluid nav-bg  my-5">
 <div className="row">
 <div className="col-10 mx-auto">
 <div className="row">
@@ -19,12 +21,12 @@ return(
           
 
           <div className="mt-3">
-          <NavLink to="/service">Get start</NavLink>
+        <button bg-danger>  <NavLink to="/service">Get start</NavLink></button>
           </div>
 
     </div>
           <div className="col-lg-6 order-1 order-lg-2 header-img ">
-            <img src={bgi} alt="Image"  className="img-fluid-animated" style={{width:"120%"}}/>
+            <img src={bgi} alt="Image"  className="img-fluid-animated animated" style={{width:"120%"}}/>
     </div>
 </div>
 </div>

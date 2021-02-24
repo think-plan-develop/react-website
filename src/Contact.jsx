@@ -1,12 +1,16 @@
 
 import React from 'react';
+import FarmC from './FarmC';
 const Contact=()=>{
 
 
 
     return(<>
+    <div className="contact">
 
-<h1>this is contact page</h1>
+
+<FarmC />
+</div>
 
         </>
     )

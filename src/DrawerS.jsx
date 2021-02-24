@@ -69,7 +69,7 @@ const useStyles = makeStyles((theme) => ({
   },
   content: {
     flexGrow: 1,
-    padding: theme.spacing(3),
+    padding: theme.spacing(0),
     transition: theme.transitions.create('margin', {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
@@ -98,7 +98,7 @@ export default function DrawerS() {
     setOpen(false);
   };
 
-  return (
+  return (<div className="drawer">
     <div className={classes.root}>
       <CssBaseline />
       <AppBar
@@ -177,7 +177,7 @@ export default function DrawerS() {
         </List>
         <Divider />
         <List>
-          {['$h!v@M-te  '].map((text, index) => (
+          {['$h!v@M-tech  '].map((text, index) => (
             <ListItem button key={text}>
               <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
               <ListItemText primary={text} />
@@ -215,6 +215,7 @@ export default function DrawerS() {
       
       
       </main>
-    </div>
+      </div>
+       </div>
   );
 }

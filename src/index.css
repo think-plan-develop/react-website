@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+button{
+  transition-delay: 0.55ms;
+}
+
+.animated{
+  animation:up-down 1s ease-in-out infinite alternate-reverse both
+  ;
+  }
+
+  @keyframes  up-down{
+    0%{transform:translateY(55px)};
+      100%
+      {transform:translateY(-25px)}
+    }
+   
+  

@@ -6,7 +6,7 @@ const About=()=>{
    
 
     <CommonPage  name="welcome to about page"/>
-
+        
         </>
     )
 
